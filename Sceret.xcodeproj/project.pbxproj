@@ -1,0 +1,668 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF9879E929AC82BE009E42C1 /* SceretsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9879E829AC82BE009E42C1 /* SceretsManager.swift */; };
+		CF9879F129AC8510009E42C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9879F029AC8510009E42C1 /* AppDelegate.swift */; };
+		CF9879F329AC8510009E42C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9879F229AC8510009E42C1 /* SceneDelegate.swift */; };
+		CF9879F529AC8510009E42C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9879F429AC8510009E42C1 /* ViewController.swift */; };
+		CF9879F829AC8510009E42C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF9879F629AC8510009E42C1 /* Main.storyboard */; };
+		CF9879FA29AC8512009E42C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF9879F929AC8512009E42C1 /* Assets.xcassets */; };
+		CF9879FD29AC8512009E42C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF9879FB29AC8512009E42C1 /* LaunchScreen.storyboard */; };
+		CF987A0329AC864F009E42C1 /* Sceret.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF987BD829AC810A00A89405 /* Sceret.framework */; };
+		CF987A0429AC864F009E42C1 /* Sceret.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF987BD829AC810A00A89405 /* Sceret.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CF987BDD29AC810A00A89405 /* Sceret.docc in Sources */ = {isa = PBXBuildFile; fileRef = CF987BDC29AC810A00A89405 /* Sceret.docc */; };
+		CF987BE329AC810A00A89405 /* Sceret.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF987BD829AC810A00A89405 /* Sceret.framework */; };
+		CF987BE829AC810A00A89405 /* SceretTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF987BE729AC810A00A89405 /* SceretTests.swift */; };
+		CF987BE929AC810A00A89405 /* Sceret.h in Headers */ = {isa = PBXBuildFile; fileRef = CF987BDB29AC810A00A89405 /* Sceret.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF987A0529AC864F009E42C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF987BCF29AC810A00A89405 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF987BD729AC810A00A89405;
+			remoteInfo = Sceret;
+		};
+		CF987BE429AC810A00A89405 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF987BCF29AC810A00A89405 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF987BD729AC810A00A89405;
+			remoteInfo = Sceret;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CF987A0729AC864F009E42C1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CF987A0429AC864F009E42C1 /* Sceret.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CF9879E829AC82BE009E42C1 /* SceretsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceretsManager.swift; sourceTree = "<group>"; };
+		CF9879EE29AC8510009E42C1 /* SceretsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SceretsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF9879F029AC8510009E42C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF9879F229AC8510009E42C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CF9879F429AC8510009E42C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CF9879F729AC8510009E42C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF9879F929AC8512009E42C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF9879FC29AC8512009E42C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF9879FE29AC8512009E42C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF987BD829AC810A00A89405 /* Sceret.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sceret.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF987BDB29AC810A00A89405 /* Sceret.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sceret.h; sourceTree = "<group>"; };
+		CF987BDC29AC810A00A89405 /* Sceret.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Sceret.docc; sourceTree = "<group>"; };
+		CF987BE229AC810A00A89405 /* SceretTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SceretTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF987BE729AC810A00A89405 /* SceretTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceretTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF9879EB29AC8510009E42C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF987A0329AC864F009E42C1 /* Sceret.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF987BD529AC810A00A89405 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF987BDF29AC810A00A89405 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF987BE329AC810A00A89405 /* Sceret.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF9879EF29AC8510009E42C1 /* SceretsApp */ = {
+			isa = PBXGroup;
+			children = (
+				CF9879F029AC8510009E42C1 /* AppDelegate.swift */,
+				CF9879F229AC8510009E42C1 /* SceneDelegate.swift */,
+				CF9879F429AC8510009E42C1 /* ViewController.swift */,
+				CF9879F629AC8510009E42C1 /* Main.storyboard */,
+				CF9879F929AC8512009E42C1 /* Assets.xcassets */,
+				CF9879FB29AC8512009E42C1 /* LaunchScreen.storyboard */,
+				CF9879FE29AC8512009E42C1 /* Info.plist */,
+			);
+			path = SceretsApp;
+			sourceTree = "<group>";
+		};
+		CF987A0229AC864F009E42C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF987BCE29AC810A00A89405 = {
+			isa = PBXGroup;
+			children = (
+				CF987BDA29AC810A00A89405 /* Sceret */,
+				CF987BE629AC810A00A89405 /* SceretTests */,
+				CF9879EF29AC8510009E42C1 /* SceretsApp */,
+				CF987BD929AC810A00A89405 /* Products */,
+				CF987A0229AC864F009E42C1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CF987BD929AC810A00A89405 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF987BD829AC810A00A89405 /* Sceret.framework */,
+				CF987BE229AC810A00A89405 /* SceretTests.xctest */,
+				CF9879EE29AC8510009E42C1 /* SceretsApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF987BDA29AC810A00A89405 /* Sceret */ = {
+			isa = PBXGroup;
+			children = (
+				CF987BDB29AC810A00A89405 /* Sceret.h */,
+				CF9879E829AC82BE009E42C1 /* SceretsManager.swift */,
+				CF987BDC29AC810A00A89405 /* Sceret.docc */,
+			);
+			path = Sceret;
+			sourceTree = "<group>";
+		};
+		CF987BE629AC810A00A89405 /* SceretTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF987BE729AC810A00A89405 /* SceretTests.swift */,
+			);
+			path = SceretTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CF987BD329AC810A00A89405 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF987BE929AC810A00A89405 /* Sceret.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CF9879ED29AC8510009E42C1 /* SceretsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF9879FF29AC8512009E42C1 /* Build configuration list for PBXNativeTarget "SceretsApp" */;
+			buildPhases = (
+				CF9879EA29AC8510009E42C1 /* Sources */,
+				CF9879EB29AC8510009E42C1 /* Frameworks */,
+				CF9879EC29AC8510009E42C1 /* Resources */,
+				CF987A0729AC864F009E42C1 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF987A0629AC864F009E42C1 /* PBXTargetDependency */,
+			);
+			name = SceretsApp;
+			productName = SceretsApp;
+			productReference = CF9879EE29AC8510009E42C1 /* SceretsApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF987BD729AC810A00A89405 /* Sceret */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF987BEC29AC810A00A89405 /* Build configuration list for PBXNativeTarget "Sceret" */;
+			buildPhases = (
+				CF987BD329AC810A00A89405 /* Headers */,
+				CF987BD429AC810A00A89405 /* Sources */,
+				CF987BD529AC810A00A89405 /* Frameworks */,
+				CF987BD629AC810A00A89405 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sceret;
+			productName = Sceret;
+			productReference = CF987BD829AC810A00A89405 /* Sceret.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CF987BE129AC810A00A89405 /* SceretTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF987BEF29AC810A00A89405 /* Build configuration list for PBXNativeTarget "SceretTests" */;
+			buildPhases = (
+				CF987BDE29AC810A00A89405 /* Sources */,
+				CF987BDF29AC810A00A89405 /* Frameworks */,
+				CF987BE029AC810A00A89405 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF987BE529AC810A00A89405 /* PBXTargetDependency */,
+			);
+			name = SceretTests;
+			productName = SceretTests;
+			productReference = CF987BE229AC810A00A89405 /* SceretTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF987BCF29AC810A00A89405 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					CF9879ED29AC8510009E42C1 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					CF987BD729AC810A00A89405 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					CF987BE129AC810A00A89405 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = CF987BD229AC810A00A89405 /* Build configuration list for PBXProject "Sceret" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF987BCE29AC810A00A89405;
+			productRefGroup = CF987BD929AC810A00A89405 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF987BD729AC810A00A89405 /* Sceret */,
+				CF987BE129AC810A00A89405 /* SceretTests */,
+				CF9879ED29AC8510009E42C1 /* SceretsApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF9879EC29AC8510009E42C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF9879FD29AC8512009E42C1 /* LaunchScreen.storyboard in Resources */,
+				CF9879FA29AC8512009E42C1 /* Assets.xcassets in Resources */,
+				CF9879F829AC8510009E42C1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF987BD629AC810A00A89405 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF987BE029AC810A00A89405 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF9879EA29AC8510009E42C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF9879F529AC8510009E42C1 /* ViewController.swift in Sources */,
+				CF9879F129AC8510009E42C1 /* AppDelegate.swift in Sources */,
+				CF9879F329AC8510009E42C1 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF987BD429AC810A00A89405 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF987BDD29AC810A00A89405 /* Sceret.docc in Sources */,
+				CF9879E929AC82BE009E42C1 /* SceretsManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF987BDE29AC810A00A89405 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF987BE829AC810A00A89405 /* SceretTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF987A0629AC864F009E42C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF987BD729AC810A00A89405 /* Sceret */;
+			targetProxy = CF987A0529AC864F009E42C1 /* PBXContainerItemProxy */;
+		};
+		CF987BE529AC810A00A89405 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF987BD729AC810A00A89405 /* Sceret */;
+			targetProxy = CF987BE429AC810A00A89405 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF9879F629AC8510009E42C1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF9879F729AC8510009E42C1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF9879FB29AC8512009E42C1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF9879FC29AC8512009E42C1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF987A0029AC8512009E42C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5YD6TF5AG5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SceretsApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cedcoss.SceretsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF987A0129AC8512009E42C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5YD6TF5AG5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SceretsApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cedcoss.SceretsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CF987BEA29AC810A00A89405 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CF987BEB29AC810A00A89405 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CF987BED29AC810A00A89405 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5YD6TF5AG5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cedcoss.Sceret;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF987BEE29AC810A00A89405 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5YD6TF5AG5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cedcoss.Sceret;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CF987BF029AC810A00A89405 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5YD6TF5AG5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cedcoss.SceretTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF987BF129AC810A00A89405 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5YD6TF5AG5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cedcoss.SceretTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF9879FF29AC8512009E42C1 /* Build configuration list for PBXNativeTarget "SceretsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF987A0029AC8512009E42C1 /* Debug */,
+				CF987A0129AC8512009E42C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF987BD229AC810A00A89405 /* Build configuration list for PBXProject "Sceret" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF987BEA29AC810A00A89405 /* Debug */,
+				CF987BEB29AC810A00A89405 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF987BEC29AC810A00A89405 /* Build configuration list for PBXNativeTarget "Sceret" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF987BED29AC810A00A89405 /* Debug */,
+				CF987BEE29AC810A00A89405 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF987BEF29AC810A00A89405 /* Build configuration list for PBXNativeTarget "SceretTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF987BF029AC810A00A89405 /* Debug */,
+				CF987BF129AC810A00A89405 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF987BCF29AC810A00A89405 /* Project object */;
+}
